@@ -5,4 +5,22 @@
 "manifest_version": 2,
 "devtools_page": "devtools/devtools-page.html",
 
+"applications": {
+    "gecko": {
+      "id": "adb@test.mozilla.org"
+    }
+  },
+
+  
+  "experiment_apis": {
+    "adb": {
+      "schema": "experiments/adb/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "script": "experiments/adb/api.js",
+        "paths": [["experiments", "adb"]]
+      }
+    }
+}
+
 }
