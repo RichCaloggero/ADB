@@ -1,0 +1,15 @@
+[
+  {
+    "namespace": "experiments.adb",
+    "description": "Accessible Debugger",
+    "functions": [
+      {
+        "name": "attachDebugger",
+        "type": "function",
+        "description": "Attaches debugger to window attahced to this devtools instance",
+        "parameters": [],
+        "async": true
+      }
+    ]
+  }
+]

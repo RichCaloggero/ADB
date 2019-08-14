@@ -3,7 +3,10 @@
 "description": "Accessible Debugger",
 "version": "0.1.1",
 "manifest_version": 2,
-"devtools_page": "devtools/devtools-page.html",
+
+"permissions": [
+"activeTab"
+],
 
 "applications": {
     "gecko": {
@@ -11,7 +14,17 @@
     }
   },
 
-  
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icons/icon64.png",
+    "default_title": "ADB",
+    "browser_style": true
+  },
+
+
   "experiment_apis": {
     "adb": {
       "schema": "experiments/adb/schema.json",
@@ -22,5 +35,6 @@
       }
     }
 }
+
 
 }
